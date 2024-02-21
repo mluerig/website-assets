@@ -3,6 +3,7 @@ if (window.location.pathname.endsWith('/') === false) {
 			window.location.host + 
 			window.location.pathname + '/' + 
 			window.location.search;
+	window.history.replaceState(null, document.title, url);
 	window.location.reload();
-	// window.history.replaceState(null, document.title, url);
 }
+
